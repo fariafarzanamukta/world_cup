@@ -1,0 +1,427 @@
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* header section */
+.greatest_show{
+    display: flex;
+    background-color: rgb(87, 83, 83);
+    width: 1621px;
+    height: 646px;
+    margin-left: 140px;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+.greatest_show_info{
+    width: 40%;
+    color: #FFFFFF;
+    margin-left: 156px;
+    margin-top: 90px;
+    
+}
+.greatest_show_info span{
+    font-weight: 700;
+    font-size: 70px;
+
+   
+}
+.greatest_show_info p{
+    font-weight: 400;
+    font-size: 16px;
+
+   
+}
+.greatest_show_info button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #00d6dd59;
+    border-radius: 5px;
+    padding: 16px 25px;
+    width: 187px;
+    height: 56px;
+    border: none;
+    transition: 1s;
+    overflow: hidden;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004); */
+}
+.greatest_show_info button span{
+    position: relative;
+    z-index: 1;;
+    font-weight: 400;
+    font-size: 20px;
+    opacity: 1;
+    color: #FFFFFF;
+    transition: .5s;
+
+}
+.greatest_show_info button :hover span{
+    opacity: 1;
+}
+.greatest_show:hover .greatest_show_info button {
+  background-color: #00d6dd59;
+  box-shadow: 0px 0px 10px #00d6dd59,
+  0px 0px 30px #00d6dd59,
+  0px 0px 60px #00d6dd59;
+}
+
+.greatest_show_info button::before{
+  content: '';
+  position: absolute;
+  background-color: rgb(53, 6, 50);
+  transition: 1s;
+  animation: animate 2s linear infinite;
+  animation-delay: calc(.33s * 10);
+  width: 187px;
+  height: 56px;
+  border-radius: 5px;
+}
+
+.greatest_show_info button span :hover ::before{
+  width: 100%;
+
+}
+@keyframes animate
+{
+ 0%{
+  transform: rotate(0deg);
+ }
+ 100%{
+  transform: rotate(360deg);
+ }
+
+}
+.greatest_show_info button::after{
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background-color: #443e3e;
+  transition: 0.5s;
+}
+.greatest_show_info button :hover ::after  {
+  /* background-color: rgba(138, 10, 42, 0.493); */
+  background-color: #00d6dd59;
+}
+.greatest_show_img{
+    width: 40%;
+    margin-left: 100px;
+    transition: width 1s, height 5s, transform 1s;
+}
+.greatest_show_img img{
+    width: 581px;
+    height: 613px;
+    margin-top: 33px;     
+}
+.greatest_show:hover .greatest_show_img {
+    transform: rotate(360deg);
+    width: 581px;
+    height: 613px;
+}
+/* Play Time Section */
+.players_details{
+    margin-left: 140px;
+    margin-top: 130px;
+    display: flex;
+
+}
+.button_link{
+    background: #5c5454;
+    border-radius: 10px;
+    width: 250px;
+    height: 232px;
+    padding: 30px;
+}
+.button_link button {
+    list-style-type: none;
+    width: 252px;
+    height: 64px;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #00d6dd59;
+    border: none;
+        
+}
+.button_link button a{
+    text-decoration: none;
+    color: white;  
+}
+ .button_link .upcoming_btn {
+    background-color: rgb(100, 11, 70); 
+  }
+  .play_time{
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    grid-column-gap: 80px; 
+    grid-row-gap: 50px;
+
+}
+.Team{
+    width: 340px;
+    height: 302px;
+    box-shadow: 1px 1px 1px white;
+    background-color: E8E8E8;
+    border: 1px solid rgb(224, 224, 224);
+    text-align: center;
+    background-color: rgba(71, 135, 138, 0.37);
+    
+
+}
+.time_info{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.time_info h1{
+    margin-left: 20px;
+}
+.france{
+    margin-left: 20px;
+}
+.team_info{
+    margin-left: 10px;
+}
+/* footer section */
+  
+.footer{
+    text-align: center;
+    margin-top: 200px;
+    background-color: #181717ee;
+    color: #FFFFFF;
+}
+.footer_heading{
+    padding-top: 150px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .footer_info{
+    display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  color: #B9B9B9;
+  font-weight: 500;
+  font-size: 16px;
+
+  } 
+  .footer_info h3{
+    padding: 20px;
+  }
+  hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 1320px;
+  }
+  .fa-brands{
+    padding: 20px;
+    color: bisque;
+    font-size: 20px;
+  }
+  .fa-facebook{
+    color: blue;
+  }
+  .fa-twitter{
+    color: rgba(11, 159, 228, 0.582);
+  }
+  .fa-youtube{
+    color: red;
+  }
+
+
+  /* Media Queries */
+
+/* mobile devices */
+@media only screen and (max-width:688px) {
+  html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    }
+  /* header section */
+  .greatest_show{
+    margin-left: 20px;
+    flex-direction: column;
+    display: inline-block;
+    width: 360px;
+    height: 672px;  
+  }
+  .greatest_show_info{
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  
+  .greatest_show_info span{
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+  }
+  .greatest_show_info button{
+    margin-left: 90px;
+
+  }
+  .greatest_show_img{
+    margin-right: 0%;
+    width: 100%;
+  }
+  .greatest_show_img img{
+    width: 250px;
+    height: 351px;
+    margin-top: 33px;     
+}
+/* player section CSS */
+.button_link{
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  width: 100%;
+  margin-left: -100px;
+  margin-top: -90px;
+  background-color: rgba(245, 245, 245, 0.144); 
+}
+.button_link button {
+  background-color: white;
+  border: 2px solid rgba(104, 98, 98, 0.726);
+  border-radius: 10px;  
+}
+.button_link button a {
+  color: black; 
+}
+.button_link .upcoming_btn{
+  background-color: #460c3cbe; 
+}
+.play_time{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 90px ;
+  margin-left: -100px;
+}
+.players_details{
+  flex-direction: column;
+}
+
+/* footer CSS */
+.footer{
+  margin-top: 30px;
+}
+.footer_heading{
+  /* display: inline-block; */
+  padding-top: 0px;
+}
+.footer_info{
+  flex-direction: column;
+  display: inline-block;
+  padding: 10%;
+
+}
+.footer_info h3{
+  padding: 0px;
+
+}
+}
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width:992px){
+html,body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  }
+/* header section */
+.greatest_show{
+  margin-left: 20px;
+  width: 734px;
+  height: 448px;  
+}
+.greatest_show_info{
+  width: 60%;
+  margin-left: 50px;
+  margin-top: 0px;
+}
+
+.greatest_show_info span{
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+}
+.greatest_show_info button{
+  margin-left: 0px;
+
+}
+.greatest_show_img{
+  margin-right: 10px;
+  width: 50%;
+}
+.greatest_show_img img{
+  width: 300px;
+  height: 441px;
+  margin-top: 7px;     
+}
+
+/* player section CSS */
+.button_link{
+display: flex;
+width: 100%;
+margin-left: -100px;
+margin-top: -90px;
+background-color: rgba(245, 245, 245, 0.144);
+column-gap: 20px;
+
+}
+.button_link button {
+background-color: white;
+border: 2px solid rgba(104, 98, 98, 0.726);
+border-radius: 10px;  
+
+}
+.button_link button a {
+color: black;
+font-weight: 600;
+font-size: 20px;
+
+}
+.button_link .upcoming_btn{
+background-color: #460c3cbe; 
+}
+.play_time{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+margin-top: -100px ;
+margin-left: -130px;
+}
+.players_details{
+flex-direction: column;
+}
+.view button {
+visibility: visible;
+border: none;
+
+}
+
+/* footer CSS */
+.footer{
+margin-top: 30px;
+}
+.footer_heading{
+/* display: inline-block; */
+padding-top: 0px;
+}
+.footer_info{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+padding-bottom: 50px;
+margin-left: 40px;
+margin-right: 50px;
+}
+.footer_info h3{
+padding: 0px;
+}
+hr{
+border: 1px solid rgba(255, 255, 255, 0.1);
+width: 690px;
+}
+
+}
